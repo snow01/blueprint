@@ -297,15 +297,15 @@ Few more features that are not demonstrated above
 
 3. SpEL based expressions also provide following flow constructs -
 
-...a. s-show-if --- include the node if condition is true.
+   a. s-show-if --- include the node if condition is true.
 
-...b. s-hide-if --- remove the node if condition is true.
+   b. s-hide-if --- remove the node if condition is true.
 
-...c. s-for -- iterate for the collection, sub nodes can have s-odd-class and s-even-class conditions
+   c. s-for -- iterate for the collection, sub nodes can have s-odd-class and s-even-class conditions
 
-...d. s-switch & s-switch-on -- switch conditions
+   d. s-switch & s-switch-on -- switch conditions
 
-...e. s-class-if -- conditional classes
+   e. s-class-if -- conditional classes
 
 4. Automatic internationalization support, with resolution against Messages resource. No need to write cumbersome spring expressions to have internationalization support. You can simply define string resources for <view-name>.<dot-separated-semantic-path-to-attribute or element-text> - during rendering, texts will be resolved from message resources.
 
