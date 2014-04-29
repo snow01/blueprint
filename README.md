@@ -145,6 +145,7 @@ Output html looks following -
 
 Similarly for empty-list block I defined following template block in 'empty-list.html' file - 
 
+```html
 <div id="empty-list" class="well text-center" ng-cloak="">
     <div id="message" class="row lead">No list-name exists. Start by creating one</div>
     <separator/>
@@ -154,13 +155,16 @@ Similarly for empty-list block I defined following template block in 'empty-list
     </div>
     <separator/>
 </div>
+```
 
 I use this template in view file as follows -
 
+```html
 <empty-list ng-if="!enterpriseCategories || enterpriseCategories.length == 0" >
   <message>No enterprise category exists. Start by creating one</message>
   <create-link href="#/enterpriseCategories/create"/>
 </empty-list>
+```
 
 ### Step 4
 
@@ -316,13 +320,3 @@ Upcoming features
 4. Support for head section templates.
 
 Thanks !
-
-
-
-
-
-
-
-
-
-
