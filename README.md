@@ -291,7 +291,7 @@ A few important things to note in this step -
 How to have IDs in output html
 ------------------------------
 
-1. You can simply have id attribute for the template usage
++ You can simply have id attribute for the template usage
 
 For example
 
@@ -314,7 +314,8 @@ Output html will look like -
 </div> 
 ```
 
-2. In templates, use of id attribute for template-name is configurable, one can configure it to use say "template-id"
+
++ In templates, use of id attribute for template-name is configurable, one can configure it to use say "template-id"
 
 
 Few more features that are not demonstrated above
