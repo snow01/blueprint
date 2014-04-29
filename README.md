@@ -288,6 +288,35 @@ A few important things to note in this step -
 
 3. In the layout template file, I did not fully created the view for thumbnail-list by defining item and its content - as in this page I do not know the content. This way, item template resolution becomes responsibility of final view ==> Lazy template resolution.
 
+How to have IDs in output html
+------------------------------
+
+1. You can simply have id attribute for the template usage
+
+For example
+
+
+```html
+<page-header id="my-id">
+  <heading>Enterprise Category List</heading>
+  <create-link href="#/enterpriseCategories/create" ng-if="enterpriseCategories.length > 0"/>
+</page-header>
+```
+Output html will look like - 
+
+```html
+<div id="my-id" class="row"> 
+  <h2 class="page-header"><span class="glyphicon glyphicon-th"></span>Enterprise Categories List<a class="pull-right" href="#/enterpriseCategories/create" ng-if="enterpriseCategories.length > 0"><span class="glyphicon glyphicon-plus">
+       <!-- icon --></span></a></h2> 
+  <div class="clearfix empty-separator">
+     <!-- clearfix -->
+  </div> 
+</div> 
+```
+
+2. In templates, use of id attribute for template-name is configurable, one can configure it to use say "template-id"
+
+
 Few more features that are not demonstrated above
 -------------------------------------------------
 
